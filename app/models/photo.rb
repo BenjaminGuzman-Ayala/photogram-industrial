@@ -21,7 +21,7 @@
 #
 class Photo < ApplicationRecord
   belongs_to :owner, class_name: "User"
-  has_many :comments, counter_cache: true
+  has_many :comments #counter_cache: true
   has_many :likes
   has_many :fans, through: :likes
   validates :caption, presence: true
