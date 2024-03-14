@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <% @user.followers.each do |follower|%>
+  <li class="list-group-item"><%=follower.username%></li>
+  <% end%>
+</ul>
